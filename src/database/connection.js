@@ -13,7 +13,7 @@ export const connection = new Sequelize(
         dialect:'postgres'
     }*/
 
-   process.env.DB_URL,
+   'postgres://estante_catalogo_user:ImJW1yXzdz2YyMPXRpzKOn3DBYKCp3yy@dpg-c9sreq397ej0lkmiua20-a/estante_catalogo',
     {
         dialect: 'postgres',
         dialectOptions: {

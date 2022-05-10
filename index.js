@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express()
-const port = processs.env.PORT|| 3001
+const port = 3001
 const __dirname = path.resolve(path.dirname(''))
 
 console.log(`Path de ${__dirname}.`)

@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const app = express()
-const port = 3001
+const port = processs.env.PORT|| 3001
 const __dirname = path.resolve(path.dirname(''))
 
 console.log(`Path de ${__dirname}.`)
@@ -20,8 +20,3 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.listen(port, () => {
     console.log(`Servidor está rodando em https://localhost:${port}.`)
 })
-
-
-
-
-

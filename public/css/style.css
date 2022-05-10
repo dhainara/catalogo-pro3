@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inherit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    background-color: aliceblue;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+main {
+    min-height: 80%;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    background-color: aliceblue;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+table {
+    width: 100%;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#card_container {
+    padding: 15px;
+    gap: 30px;
+    
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article.cards {
+    font-size:17px;
+    background-color: lightblue;
+    border-radius:10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition:0.3;
+    height: 500px;
+    width: 300px;
+    padding: 17px;
+}
+
+article.cards p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+article.cards p.ident {
+    height:10%;
+}
+
+table.cards {
+    font-size: 17px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3;
+    height: auto;
+    width: 500px;
+    padding: 17px;
+}
+
+.cards img {
+    width: 100%
+}
+
+.cards div.acoes {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    height: 90%;
+    background-color: lightskyblue;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards div.acoes img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+form {
+    font-size: 17px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3;
+    height: auto;
+    width: 350px;
+    padding: 17px;
+}
+
+fieldset {
+    border:none;
+}
+input {
+    border: none;
+}
+
+section#form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 100%;
+}
+
+section#form_container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 300px;
+}
+
+form fieldset {
+    padding: 15px;
+}
+
+form button#btn_submit {
+    border: none;
+    background-color: azure;
+    padding: 
+}
+
+#btn_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+fieldset legend {
+    border-radius: 10px;
+    background-color: lightseagreen;
+    color: white;
+
+}
+
+
+
+header a:hover, footer a:hover {
+    background-color: lightblue;
+}

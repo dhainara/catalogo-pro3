@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Detalhes: <%= livrosDetalhes.nome %>
+    </title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+        <main>
+            <section id="card_container">
+                <table class="cards">
+                    <thead>
+                        <th colspan="2">Dados</th>
+                    </thead>
+                    <tr>
+                        <td>Nome:</td>
+                        <td>
+                            <%= livrosDetalhes.nome_livro%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gênero:</td>
+                        <td>
+                            <%= livrosDetalhes.genero%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="<%= livrosDetalhes.img%>" alt="Capa do <%= livrosDetalhes.nome_livro %>"></td>
+                    </tr>
+                    <tr>
+                        <td>Ano de Lanç.:</td>
+                        <td>
+                            <%= livrosDetalhes.ano_lancamento%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Quantidade de páginas:</td>
+                        <td>
+                            <%= livrosDetalhes.total_paginas%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Autor:</td>
+                        <td>
+                            <%= livrosDetalhes.nome_autor%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td>
+                            <%= livrosDetalhes.descricao%>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+        <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Início</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="card_container">
+            <% listLivros.forEach(element=> { %>
+                <a href="/detalhes/<%= element.id %>" target="_blank">
+                    <article class="cards">
+                        <p class="ident">
+                           Nome: <%= element.nome_livro %>
+                        </p>
+                        <p><img src="<%= element.img%>" alt="Capa do <%= element.nome_livro %>"></p>
+                        <p class="ident">Gênero: <%= element.genero %></p>
+                        
+                    </article>
+                </a>
+       
+                <div id="acoes">
+                    <a href="/deletar/<%= element.id %>">
+                        <p><img scr="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="delete"></p>
+                    </a>
+
+                    <a href="/editar/<%= element.id %>">
+                        <p><img scr="https://cdn-icons-png.flaticon.com/512/1843/1843344.png" alt="edit"></p>
+                    </a>
+                </div>
+                    <% }) %> 
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

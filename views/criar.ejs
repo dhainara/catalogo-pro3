@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Criar</title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+        <main>
+            <section id="form_container">
+                <form method="post" action="/criar">
+                    <fieldset>
+                        <legend>Registrar livro</legend>
+                        <fieldset class="fieldset_data">
+                            <input type="text" name="nome_livro" maxlength="150" required>
+                            <label for="nome_livro">Nome:</label>
+                        </fieldset>
+
+                        <fieldset class="fieldset_data">
+                            <input type="text" name="genero" maxlength="100" required>
+                            <label for="genero">Gênero:</label>
+                        </fieldset>
+
+                        <fieldset class="fieldset_data">
+                            <input type="url" name="img" maxlength="2000" required>
+                            <label for="img">Imagem:</label>
+                        </fieldset>
+
+                        <fieldset class="fieldset_data">
+                            <input type="text" name="ano_lancamento" maxlength="10" required>
+                            <label for="ano_lancamento">Ano de Lanç.:</label>
+                        </fieldset>
+
+                        <fieldset class="fieldset_data">
+                            <input type="text" name="total_paginas" maxlength="10"required>
+                            <label for="total_paginas">Quantidade de páginas:</label>
+                        </fieldset>
+
+                        <fieldset class="fieldset_data">
+                            <input type="text" name="nome_autor" maxlength="100" required>
+                            <label for="nome_autor">Autor:</label>
+                        </fieldset>
+
+                        <fieldset class="fieldset_data">
+                            <input type="text" name="descricao" maxlength="2000" required>
+                            <label for="descricao">Descrição:</label>
+                        </fieldset>
+
+                        <div id="btn_container">
+                            <button id="btn_submit" type="submit">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>
